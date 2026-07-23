@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+exports/*.csv
+.streamlit/secrets.toml
+
+# Real downloaded Sky130 PDK / workshop data -- fetched per SETUP.md, not committed
+sky130RTLDesignAndSynthesisWorkshop/
+skywater-pdk-libs-sky130_fd_sc_hd/
+*.lib
+!sample_data/synthetic_test.lib
