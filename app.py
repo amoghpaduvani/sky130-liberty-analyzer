@@ -1,5 +1,5 @@
 """
-Sky130 Liberty File Analyzer & Cell Visualizer
+Liberty File Analyzer & Cell Visualizer
 ================================================
 Interactive dashboard for exploring Liberty (.lib) standard-cell timing data:
 delay LUTs, drive-strength comparisons, and setup/hold-style rise/fall arcs.
@@ -20,7 +20,7 @@ import streamlit as st
 from parser.liberty_parser import parse_liberty
 from parser.timing_model import build_library, LibertyLibrary, Cell
 
-st.set_page_config(page_title="Sky130 Liberty Analyzer", layout="wide", page_icon="📐")
+st.set_page_config(page_title="Liberty Timing Analyzer", layout="wide", page_icon="📐")
 
 
 # --------------------------------------------------------------------------- #
@@ -108,10 +108,11 @@ def build_family_csv(lib: LibertyLibrary, slew: float, load: float) -> pd.DataFr
 # App
 # --------------------------------------------------------------------------- #
 
-st.title("📐 Sky130 Liberty File Analyzer & Cell Visualizer")
+st.title("📐 Liberty Timing File Analyzer & Visualizer")
 st.caption(
     "Parses real `.lib` Liberty timing files (the same format read by PrimeTime, "
-    "Tempus, and OpenSTA) and visualizes cell delay, transition, and drive-strength data."
+    "Tempus, and OpenSTA) and visualizes cell delay, transition, and drive-strength data. "
+    "Verified against Sky130, NanGate45, GF180MCU, Sky130HD, and IHP SG13G2."
 )
 
 lib = load_library()
