@@ -92,7 +92,8 @@ Cell: sky130_fd_sc_hd__inv_4  |  Rise Delay at (slew=0.1ns, load=0.01pF) = 0.056
 
 ## Dashboard
 
-*(screenshot placeholder — see `screenshots/` folder)*
+![Delay heatmap](screenshots/heatmap.png)
+![Drive strength comparison](screenshots/drive_strength.png)
 
 The Streamlit app lets you upload any Liberty file, pick a cell family,
 output pin, and timing arc, then explore:
