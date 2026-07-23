@@ -1,4 +1,4 @@
-#Liberty File Analyzer & Cell Visualizer
+# Liberty File Analyzer & Cell Visualizer
 
 A from-scratch parser and interactive visualizer for **Liberty (`.lib`) timing
 files** — the industry-standard format read by PrimeTime, Tempus, and OpenSTA
